@@ -1,13 +1,14 @@
 import React, { useRef, useState } from 'react';
-import { ActivityIndicator, Animated, Image, ImageProps, StyleSheet, View } from 'react-native';
+import { ActivityIndicator, Animated, StyleSheet, View } from 'react-native';
+import FastImage, { FastImageProps } from 'react-native-fast-image';
 
-type Props = ImageProps & {
+type Props = FastImageProps & {
     height: number;
     width: number;
 };
 
 export default function LazyImage(props: Props) {
-    
+
     const [isLoading, setIsloading] = useState(true);
 
     const imageOpacity = useRef(new Animated.Value(0)).current;
@@ -32,7 +33,7 @@ export default function LazyImage(props: Props) {
                 {isLoading && <ActivityIndicator />}
             </View>
             <Animated.View style={{ opacity: imageOpacity }}>
-                <Image style={{ width, height, }} {...props} onLoad={onLoad} />
+                <FastImage {...props} style={{ width, height }} onLoad={onLoad} />
             </Animated.View>
         </View>
     )
