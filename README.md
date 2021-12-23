@@ -18,7 +18,7 @@ This is a a React Native application source code which shows 7-day weather forec
 
 ## How to run
 Follow [the instructions here](https://reactnative.dev/docs/environment-setup) to setup the environment. Then run the commands below.
-`git clone https://github.com/poormohammadi/ReactNativeWeatherForecast.git`
+`git clone https://github.com/poormohammadi/react-native-weather-forecast.git`
 `cd ReactNativeWeatherForecast`
 `npm install`
 
