@@ -14,8 +14,10 @@ export default function SearchBox(props: Props) {
                 style={styles.input}
                 value={props.value}
                 onChangeText={props.onChange}
+                placeholder="Enter city name:"
             />
             <Button
+                disabled={!props.value}
                 title="Search"
                 onPress={props.onSubmit}
             />
