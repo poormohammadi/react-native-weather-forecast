@@ -1,5 +1,7 @@
 import React from 'react';
-import { Button, StyleSheet, TextInput, View } from 'react-native';
+import { StyleSheet, TextInput, View } from 'react-native';
+
+import Button from './Button';
 
 type Props = {
     value?: string;
@@ -28,7 +30,8 @@ export default function SearchBox(props: Props) {
 const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',
-        padding: 10,
+        paddingHorizontal: 10,
+        paddingVertical: 20,
     },
     input: {
         flex: 1,
@@ -37,5 +40,6 @@ const styles = StyleSheet.create({
         borderRadius: 5,
         borderColor: 'grey',
         paddingLeft: 10,
+        height: 40,
     }
 });
