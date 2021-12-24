@@ -21,7 +21,7 @@ Follow [the instructions here](https://reactnative.dev/docs/environment-setup) t
 
 `git clone https://github.com/poormohammadi/react-native-weather-forecast.git`
 
-`cd ReactNativeWeatherForecast`
+`cd react-native-weather-forecast`
 
 `npm install`
 
